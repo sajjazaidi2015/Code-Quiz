@@ -23,7 +23,7 @@ var listEl = document.querySelector('#highscores')
 for (i = 0; i < sortedArray.length; i++){
     const score = sortedArray[i]
     const liEl = document.createElement('li');
-    liEl.textContent = score.score + " - " + score.initial;
+    liEl.textContent = (i+1) + '. ' + score.score + " - " + score.initial;
     listEl.appendChild(liEl)
 }
 var cleBtn = document.querySelector('#clear-button')

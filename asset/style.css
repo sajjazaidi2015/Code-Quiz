@@ -22,7 +22,7 @@ header {
 }
 #highscoreHeader{
     margin: 0 auto;
-    width: 53%;
+    width: 52%;
     font-size: 36px;
     color: purple;
     font-weight: bold
@@ -104,6 +104,8 @@ section{
 
 #highscores li{
     background-color: #d7bed7;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 #initial {
     padding: 10px;
