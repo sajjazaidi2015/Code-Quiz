@@ -77,7 +77,7 @@ function renderQuestion(){
     //     select first qurestion from the questions array by questionCounter as index
     const selectedQuestion = questions[questionCounter];
     if(selectedQuestion === undefined) {
-        localStorage.setItem("score", score)
+        localStorage.setItem("score", JSON.stringify(score))
         window.location = './final-score.html';
     }
     //     get the instance of the question DOM and set the question text inside
