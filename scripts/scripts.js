@@ -90,13 +90,14 @@ function renderQuestion(){
         const btnEl = document.createElement('button')
         const liEl = document.createElement('li');
         btnEl.classList.add('button')
-        btnEl.textContent = answer.value; 
+        btnEl.classList.add('quiz-button')
+        btnEl.textContent = (i+1) + '. ' + answer.value; 
         liEl.appendChild(btnEl);
         answersEl.appendChild(liEl)
         btnEl.addEventListener('click', function(){
             // console.log('is valid ===>', answer.isValid)
             if (answer.isValid === true){
-                yourAnswerEl.textContent = 'Correct'
+                yourAnswerEl.textContent = 'Correct!'
                 //it will remove the comment after 1 sec
                 setTimeout(function () {
                     yourAnswerEl.innerHTML = "";
@@ -107,7 +108,7 @@ function renderQuestion(){
 
                 
             }else{
-                yourAnswerEl.textContent = 'Wrong'
+                yourAnswerEl.textContent = 'Wrong!'
                 setTimeout(function () {
                     yourAnswerEl.innerHTML = "";
                 }, 1000);

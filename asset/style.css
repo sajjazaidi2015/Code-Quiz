@@ -8,10 +8,8 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 60%;
     line-height: 1.5;
-    
+    width: 100%;
 }
 
 
@@ -21,6 +19,13 @@ header {
     flex-wrap: wrap;
     margin: 25px;
     
+}
+#highscoreHeader{
+    margin: 0 auto;
+    width: 53%;
+    font-size: 36px;
+    color: purple;
+    font-weight: bold
 }
 .score h1{
     font-size: 20px;
@@ -46,9 +51,9 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
-.quiz-question{
-    margin-left: 24px;
-    margin-bottom: 10px;
+section{
+    margin: 0 auto;
+    width: 50%;
 }
 .quiz-question h2{
     font-size: 20px;
@@ -56,6 +61,7 @@ header {
     margin-bottom: 10px;
 }
 .quiz-question ul{
+    list-style-type: none;
     width: 20%;
 }
 .quiz-question p{
@@ -77,9 +83,30 @@ header {
     cursor: pointer;
     padding: 10px 20px;
     text-decoration: none;
+    text-align: left;
+}
+.quiz-button {
+    width: 250px;
 }
 .button:hover{
     -webkit-box-shadow: 2px 2px 20px 2px black;
     box-shadow: 2px 2px 20px 2px black;
     
+}
+.final-score-buttons {
+    margin-top: 20px;
+}
+#your-answer {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#highscores li{
+    background-color: #d7bed7;
+}
+#initial {
+    padding: 10px;
+    border: 1px solid purple;
+    font-size: 15px;
 }
