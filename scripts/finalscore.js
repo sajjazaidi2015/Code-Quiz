@@ -23,7 +23,10 @@ subBtn.addEventListener("click", function () {
       score: totalScore,
       initial: initialInput.value,
     };
-    localStorage.setItem('initialTotalScore', JSON.stringify(initialTotalScore))
-    window.location = './high-score.html'
+    localStorage.setItem(
+      "initialTotalScore",
+      JSON.stringify(initialTotalScore)
+    );
+    window.location = "./high-score.html";
   }
 });
